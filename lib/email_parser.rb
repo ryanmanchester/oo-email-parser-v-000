@@ -10,7 +10,8 @@ class EmailParser
   end
 
   def parse
-    email.split(/\,?\s/).delete_if{|emails| emails == email}
+    arr = []
+    arr << email.split(/\,?\s/)
 
   end
 
