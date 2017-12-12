@@ -10,8 +10,8 @@ class EmailParser
   end
 
   def parse
-    email.split(/\,?\s/)
-    email.delete_if{|duplicate| duplicate == email}
+    email.split(/\,?\s/).delete_if{|emails| emails == email}
+
   end
 
 end
