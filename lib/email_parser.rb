@@ -10,9 +10,7 @@ class EmailParser
   end
 
   def parse
-    arr = []
-    arr << email.split(/\,?\s/)
-
+  email.split(/\,?\s/)
   end
 
 end
