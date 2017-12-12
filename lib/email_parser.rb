@@ -10,7 +10,7 @@ class EmailParser
   end
 
   def parse
-    email.split(/[\s\b\,]/)
+    email.split(/\s/)
   end
 
 end
