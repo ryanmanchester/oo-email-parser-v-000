@@ -11,6 +11,7 @@ class EmailParser
 
   def parse
     email.split(/\,?\s/)
+    email.delete_if{|duplicate| duplicate == email}
   end
 
 end
